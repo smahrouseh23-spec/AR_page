@@ -14,6 +14,7 @@ Simple Web AR component showcase using Google's `<model-viewer>` web component.
 - Glossy metallic steel-blue model finish
 - Student Tech Lab ELTE-inspired logo/color styling
 - Kontron front rocker model selector
+- QR code for mobile access
 
 ## Public Page
 
