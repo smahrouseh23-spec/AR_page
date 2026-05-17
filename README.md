@@ -9,7 +9,7 @@ Simple Web AR component showcase using Google's `<model-viewer>` web component.
 - AR mode
 - Auto-rotate
 - Shadows and neutral lighting
-- Default model scale set to 50%
+- STEP millimeter units converted to glTF meter units for realistic AR scale
 - Student Tech Lab ELTE-inspired logo/color styling
 - Kontron front rocker model selector
 
