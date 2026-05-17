@@ -1,6 +1,6 @@
-# Basic AR Component Showcase
+# Kontron AR Component Viewer
 
-Simple Web AR component showcase using Google's `<model-viewer>` web component.
+Professional Web AR viewer for high-resolution Kontron front rocker GLB models using Google's `<model-viewer>` web component.
 
 ## Features
 

@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Basic AR Component Showcase</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Kontron AR Component Viewer</title>
+    <link rel="stylesheet" href="./styles.css?v=professional-no-bar" />
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-    <script defer src="./app.js"></script>
+    <script defer src="./app.js?v=professional-no-bar"></script>
   </head>
   <body>
     <div class="brand-pattern" aria-hidden="true"></div>
@@ -16,16 +16,16 @@
           <img src="./assets/studenttechlab-logo.svg" alt="Student Tech Lab ELTE logo" />
           <div>
             <p class="eyebrow">Student Tech Lab ELTE</p>
-            <p class="brand-subtitle">Web AR preview</p>
+            <p class="brand-subtitle">3D / AR Viewer</p>
           </div>
         </div>
 
         <div class="title-block">
-          <h1>Basic AR Component Showcase</h1>
-          <p>Kontron front rocker models prepared for browser-based 3D inspection and mobile AR placement.</p>
+          <h1>Kontron AR Component Viewer</h1>
+          <p>High-resolution GLB models with fixed real-world AR scale.</p>
         </div>
 
-        <p id="modelStatus" class="model-status" role="status">Loading assets/component.glb...</p>
+        <p id="modelStatus" class="model-status" role="status">Loading model...</p>
       </header>
 
       <section class="showcase-layout" aria-label="AR component showcase">
@@ -33,7 +33,7 @@
           <model-viewer
             id="componentViewer"
             src="./assets/component.glb?v=highres-steel-blue"
-            alt="Interactive 3D component model"
+            alt="Kontron front rocker 3D model"
             camera-controls
             auto-rotate
             ar
@@ -49,18 +49,15 @@
             loading="eager"
             reveal="auto"
           >
-            <button class="ar-button" slot="ar-button">View in AR</button>
-            <div class="model-progress" slot="progress-bar">
-              <span class="model-progress-bar"></span>
-            </div>
+            <button class="ar-button" slot="ar-button">Open AR</button>
           </model-viewer>
         </div>
 
-        <aside class="detail-stack" aria-label="Instructions and workflow">
+        <aside class="detail-stack" aria-label="Model information">
           <section class="info-panel">
             <h2>Model</h2>
             <label class="model-picker">
-              <span>Kontron component</span>
+              <span>Select model</span>
               <select id="modelSelect" aria-label="Choose Kontron model">
                 <option value="./assets/component.glb?v=highres-steel-blue">Front rocker initial</option>
                 <option value="./assets/frontrocker_modal.glb?v=highres-steel-blue">Front rocker modal</option>
@@ -69,30 +66,30 @@
           </section>
 
           <section class="info-panel">
-            <h2>Instructions</h2>
+            <h2>Mobile AR</h2>
             <ol class="instruction-list">
-              <li>Open the page on a mobile device.</li>
-              <li>Inspect the component in 3D.</li>
-              <li>Press the AR button.</li>
-              <li>Place the component in the real environment.</li>
+              <li>Open on a mobile device.</li>
+              <li>Review the 3D model.</li>
+              <li>Tap Open AR.</li>
+              <li>Place at real-world scale.</li>
             </ol>
           </section>
 
           <section class="info-panel">
-            <h2>Workflow</h2>
+            <h2>Process</h2>
             <p class="workflow-line">
-              <span>STEP model</span>
+              <span>STEP</span>
               <span aria-hidden="true">&rarr;</span>
-              <span>GLB conversion</span>
+              <span>GLB</span>
               <span aria-hidden="true">&rarr;</span>
-              <span>Web AR display</span>
+              <span>Web AR</span>
             </p>
           </section>
 
           <section class="info-panel qr-panel">
             <div>
-              <h2>QR Code</h2>
-              <p>Scan to open the live mobile AR page.</p>
+              <h2>Mobile Access</h2>
+              <p>Scan to open this page on a mobile device.</p>
             </div>
             <a class="qr-code" href="https://smahrouseh23-spec.github.io/AR_page/" aria-label="Open the mobile AR page">
               <img src="./assets/mobile-qr.svg" alt="QR code for mobile access" />
