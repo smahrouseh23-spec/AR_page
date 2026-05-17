@@ -10,6 +10,7 @@ Simple Web AR component showcase using Google's `<model-viewer>` web component.
 - Auto-rotate
 - Shadows and neutral lighting
 - STEP millimeter units converted to glTF meter units for realistic AR scale
+- Fixed AR scale and preview camera distance tuned for the real-size model
 - Student Tech Lab ELTE-inspired logo/color styling
 - Kontron front rocker model selector
 
